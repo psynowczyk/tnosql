@@ -1,5 +1,5 @@
-var conn = new Mongo();
-var db = conn.getDB('Trains');
+var connection = new Mongo();
+var db = connection.getDB('Trains');
 var trains = db.trains.find();
 var counter = 0;
 
@@ -17,4 +17,4 @@ trains.forEach(function (result) {
 		)
 	}
 });
-console.log("Documents modified: " + counter);
+print("Documents modified: " + counter);
