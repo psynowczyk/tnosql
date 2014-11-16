@@ -270,5 +270,7 @@ Przykładowy poprawiony dokument:
 ]
  ```
 
- Przekształcenie do formatu geojson za pomocą [skryptu]()
- https://github.com/psynowczyk/tnosql/blob/master/1d1_result.geojson
+ Przekształcenie do formatu geojson za pomocą [skryptu](https://github.com/psynowczyk/tnosql/blob/master/to_geojson.js)<br>
+ Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d1_result.geojson
+
+ <script src="https://github.com/psynowczyk/tnosql/blob/master/1d1_result.geojson"></script>
