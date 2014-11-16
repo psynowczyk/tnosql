@@ -290,18 +290,20 @@ Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d2_result.geojson
 
 ### 1d.3
 
-100 stacji paliw na obszarze pomiędzy Gdańskiem, Olsztynem, Warszawą i Poznaniem.
+100 stacji paliw na obszarze pomiędzy Gdańskiem, Olsztynem i Poznaniem.
 ```
-var polygon = [
-		[18.65, 54.35],
-		[20.48, 53.78],
-		[21.01, 52.23],
-		[16.93, 52.41]
-];
 db.fuel.find({
 	loc: {
 		$geoWithin: {
-			$polygon: polygon
+			$geometry: {
+				"type": "Polygon",
+				"coordinates": [[
+					[18.65, 54.35],
+					[20.48, 53.78],
+					[16.93, 52.41],
+					[18.65, 54.35]
+				]]
+			}
 		}
 	}
 }).limit(100).toArray();
