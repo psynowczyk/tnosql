@@ -309,3 +309,21 @@ db.fuel.find({
 }).limit(100).toArray();
 ```
 Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d3_result.geojson
+
+### 1d.4
+
+Stacje paliw na linii Warszawa-Gdańsk (z powodu braku wyniku podałem dokładne współrzędne punktu A i B, które są stacjami paliw)
+```
+var line = {
+	"type": "LineString",
+	"coordinates": [[20.904929, 52.239413], [19.424150, 54.374859]]
+}
+db.fuel.find({
+	loc: {
+		$geoIntersects: {
+			$geometry: line
+		}
+	}
+}).limit(100).toArray();
+```
+Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d4_result.geojson
