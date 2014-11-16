@@ -3,6 +3,7 @@
 - [Zadanie 1a](#zadanie-1a)
 - [Zadanie 1b](#zadanie-1b)
 - [Zadanie 1c](#zadanie-1c)
+- [Zadanie 1d](#zadanie-1d)
 
 #Dane techniczne
 **CPU**: Intel® Core™ i7-4510U (2.0 GHz, 3.1 GHz Turbo, 4 MB Cache)<br>
@@ -45,7 +46,6 @@ sys     0m 6.343s
 #Zadanie 1c
 
 Zamianę stringu zawierającego tagi na tablicę łańcuchów dokonałem za pomocą [skryptu](https://github.com/psynowczyk/tnosql/blob/master/tags_to_array.js).
-
 ```
 $ time mongo tags_to_array.js
 Documents modified: 6032934
@@ -76,7 +76,6 @@ Przykładowy zmodyfikowany dokument:
 ![alt text](https://raw.githubusercontent.com/psynowczyk/tnosql/master/sc2.png "")
 
 Zliczanie wszystkich tagów za pomocą [skryptu](https://github.com/psynowczyk/tnosql/blob/master/all_tags.js):
-
 ```
 $ time mongo all_tags.js
 All tags: 17408733
@@ -87,8 +86,189 @@ sys     0m 2.623s
 ```
 
 Zliczanie unikalnych tagów:
-
 ```
 > db.trains.distinct("tags").length
 42060
 ```
+
+#Zadanie 1d
+
+Do tego zadania użyłem współrzędnych geograficznych stacji paliw pobranych z serwisu poipoint.pl w formacie csv.
+```
+time mongoimport -d Trains -c fuel --type csv --file Stacje_Paliw.csv --headerline
+
+connected to: 127.0.0.1
+check 9 1433
+imported 1432 objects
+
+real    0m 0.043s
+user    0m 0.019s
+sys     0m 0.014s
+```
+
+Przykładowy dokument:
+```
+> db.fuel.findOne()
+{
+	"_id" : ObjectId("5468c9bec5e4ff939974a6c4"),
+	"coo1" : 20.154418,
+	"coo2" : 50.220851,
+	"type" : "Stacje Paliw",
+	"city" : "Niegardów",
+	"address" : 775
+}
+```
+
+Do poprawienia formatu danych wykorzystałem [skrypt](https://github.com/psynowczyk/tnosql/blob/master/fix_fuel.js)
+```
+time mongo fix_fuel.js
+
+real    0m 0.138s
+user    0m 0,109s
+sys     0m 0.026s
+```
+
+Przykładowy poprawiony dokument:
+```
+> db.fuel.findOne()
+{
+	"_id" : ObjectId("5468cadcc5e4ff939974b1b5"),
+	"city" : "Velence",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			18.637587,
+			47.244133
+		]
+	}
+}
+>
+```
+
+ Dodajemy geo-indeks do kolekcji:
+ ```
+> db.fuel.ensureIndex({"loc": "2dsphere"})
+ ```
+
+ ###1d.1
+
+ 10 najbliższych stacji paliw w promieniu 20km od centrum Gdańska
+ ```
+> var gdansk = { "type": "Point", "coordinates": [18.65, 54.35] }
+> db.fuel.find({ loc: { $near: { $geometry: gdansk }, $maxDistance: 20000 } }).limit(10).toArray()
+[
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974acf3"),
+		"city" : "Gdańsk",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.59567,
+				54.3509
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974ad4c"),
+		"city" : "Gdańsk",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.71147,
+				54.3506
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974ae4f"),
+		"city" : "Gdańsk",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.65841,
+				54.391505
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974b05e"),
+		"city" : "Gdańsk",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.571749,
+				54.337487
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974ad8f"),
+		"city" : "Gdańsk",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.619926,
+				54.394374
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974ad95"),
+		"city" : "Gdańsk",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.621572,
+				54.397784
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974ad1c"),
+		"city" : "Gdańsk",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.59482,
+				54.40933
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974acf4"),
+		"city" : "Gdańsk",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.52591,
+				54.35009
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974ace9"),
+		"city" : "Kowale",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.546702,
+				54.304205
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5468cadcc5e4ff939974ad10"),
+		"city" : "Straszyn",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				18.59435,
+				54.27803
+			]
+		}
+	}
+]
+ ```
+
+ Przekształcenie do formatu geojson za pomocą [skryptu]()
+ https://github.com/psynowczyk/tnosql/blob/master/1d1_result.geojson
