@@ -145,15 +145,15 @@ Przykładowy poprawiony dokument:
 >
 ```
 
- Dodajemy geo-indeks do kolekcji:
- ```
+Dodajemy geo-indeks do kolekcji:
+```
 > db.fuel.ensureIndex({"loc": "2dsphere"})
- ```
+```
 
- ###1d.1
+### 1d.1
 
- 10 najbliższych stacji paliw w promieniu 20km od centrum Gdańska
- ```
+10 najbliższych stacji paliw w promieniu 20km od centrum Gdańska
+```
 > var gdansk = { "type": "Point", "coordinates": [18.65, 54.35] }
 > db.fuel.find({ loc: { $near: { $geometry: gdansk }, $maxDistance: 20000 } }).limit(10).toArray()
 [
@@ -268,9 +268,42 @@ Przykładowy poprawiony dokument:
 		}
 	}
 ]
- ```
+```
 
- Przekształcenie do formatu geojson za pomocą [skryptu](https://github.com/psynowczyk/tnosql/blob/master/to_geojson.js)<br>
- Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d1_result.geojson
+Przekształcenie do formatu geojson za pomocą [skryptu](https://github.com/psynowczyk/tnosql/blob/master/to_geojson.js)<br>
+Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d1_result.geojson
 
- <script src="https://github.com/psynowczyk/tnosql/blob/master/1d1_result.geojson"></script>
+### 1d.2
+
+Stacje paliw w promieniu 0.8° od Olsztyna
+```
+var olsztyn = { "type": "Point", "coordinates": [20.48, 53.78] }
+db.fuel.find({
+	loc: {
+		$geoWithin: {
+			$center: [[olsztyn.coordinates[0], olsztyn.coordinates[1]], 0.80]
+		}
+	}
+}).limit(5).toArray();
+```
+Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d2_result.geojson
+
+### 1d.3
+
+100 stacji paliw na obszarze pomiędzy Gdańskiem, Olsztynem, Warszawą i Poznaniem.
+```
+var polygon = [
+		[18.65, 54.35],
+		[20.48, 53.78],
+		[21.01, 52.23],
+		[16.93, 52.41]
+];
+db.fuel.find({
+	loc: {
+		$geoWithin: {
+			$polygon: polygon
+		}
+	}
+}).limit(100).toArray();
+```
+Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d3_result.geojson
