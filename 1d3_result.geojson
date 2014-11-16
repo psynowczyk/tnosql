@@ -1,0 +1,1105 @@
+{
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Fijewo",
+				"type" : "Point",
+				"coordinates" : [
+					18.931202,
+					53.395975
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Dobre",
+				"type" : "Point",
+				"coordinates" : [
+					18.583929,
+					52.698231
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Michale",
+				"type" : "Point",
+				"coordinates" : [
+					18.718046,
+					53.490219
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Bielawy",
+				"type" : "Point",
+				"coordinates" : [
+					18.011856,
+					52.83466
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Inowrocław",
+				"type" : "Point",
+				"coordinates" : [
+					18.251032,
+					52.768736
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Brodnica",
+				"type" : "Point",
+				"coordinates" : [
+					19.387699,
+					53.259759
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Lipno",
+				"type" : "Point",
+				"coordinates" : [
+					19.199849,
+					52.850677
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Olsztyn",
+				"type" : "Point",
+				"coordinates" : [
+					20.4641,
+					53.767401
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Kruszwica",
+				"type" : "Point",
+				"coordinates" : [
+					18.313492,
+					52.67828
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Stawiguda",
+				"type" : "Point",
+				"coordinates" : [
+					20.396299,
+					53.656667
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Raciąż",
+				"type" : "Point",
+				"coordinates" : [
+					20.101864,
+					52.777501
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Ostaszewo",
+				"type" : "Point",
+				"coordinates" : [
+					18.625429,
+					53.120997
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Gardeja",
+				"type" : "Point",
+				"coordinates" : [
+					18.939815,
+					53.605067
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Załuski",
+				"type" : "Point",
+				"coordinates" : [
+					20.528837,
+					52.513842
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Morgi",
+				"type" : "Point",
+				"coordinates" : [
+					18.686296,
+					53.633736
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Starogard Gdański",
+				"type" : "Point",
+				"coordinates" : [
+					18.486018,
+					53.95403
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Miłomłyn",
+				"type" : "Point",
+				"coordinates" : [
+					19.842065,
+					53.765659
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Lubraniec",
+				"type" : "Point",
+				"coordinates" : [
+					18.843716,
+					52.551211
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Strzyżawa",
+				"type" : "Point",
+				"coordinates" : [
+					18.18635,
+					53.13587
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Ślesin",
+				"type" : "Point",
+				"coordinates" : [
+					18.293056,
+					52.371367
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Osie",
+				"type" : "Point",
+				"coordinates" : [
+					18.348787,
+					53.59474
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Mieścisko",
+				"type" : "Point",
+				"coordinates" : [
+					17.33386,
+					52.74137
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Kłecko",
+				"type" : "Point",
+				"coordinates" : [
+					17.42926,
+					52.635
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Gniezno",
+				"type" : "Point",
+				"coordinates" : [
+					17.63187,
+					52.5413
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Sanniki",
+				"type" : "Point",
+				"coordinates" : [
+					19.85503,
+					52.33531
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Skarszewy",
+				"type" : "Point",
+				"coordinates" : [
+					18.45408,
+					54.06818
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Bydgoszcz",
+				"type" : "Point",
+				"coordinates" : [
+					17.92162,
+					53.14757
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Janowo",
+				"type" : "Point",
+				"coordinates" : [
+					18.56544,
+					53.93956
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Sońsk",
+				"type" : "Point",
+				"coordinates" : [
+					20.70241,
+					52.77277
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Zajączkowo",
+				"type" : "Point",
+				"coordinates" : [
+					18.737839,
+					54.127099
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Subkowy",
+				"type" : "Point",
+				"coordinates" : [
+					18.766833,
+					53.983213
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Warlubie",
+				"type" : "Point",
+				"coordinates" : [
+					18.63509,
+					53.589557
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Bzowo",
+				"type" : "Point",
+				"coordinates" : [
+					18.650867,
+					53.562477
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Osielsko",
+				"type" : "Point",
+				"coordinates" : [
+					18.06768,
+					53.1846
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Kowal",
+				"type" : "Point",
+				"coordinates" : [
+					19.140614,
+					52.524128
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Bożejewice",
+				"type" : "Point",
+				"coordinates" : [
+					17.68714,
+					52.81485
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Kowal",
+				"type" : "Point",
+				"coordinates" : [
+					19.140669,
+					52.546486
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Biskupice",
+				"type" : "Point",
+				"coordinates" : [
+					17.17225,
+					52.4685
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Janowice",
+				"type" : "Point",
+				"coordinates" : [
+					18.885077,
+					52.754424
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Gniezno",
+				"type" : "Point",
+				"coordinates" : [
+					17.60079,
+					52.51652
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Kostrzyn",
+				"type" : "Point",
+				"coordinates" : [
+					17.206868,
+					52.398002
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Żygląd",
+				"type" : "Point",
+				"coordinates" : [
+					18.516537,
+					53.25881
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Uniszki Zawadzkie",
+				"type" : "Point",
+				"coordinates" : [
+					20.421098,
+					53.171829
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Nidzica",
+				"type" : "Point",
+				"coordinates" : [
+					20.39053,
+					53.372747
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Iława",
+				"type" : "Point",
+				"coordinates" : [
+					19.588842,
+					53.605546
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Gniezno",
+				"type" : "Point",
+				"coordinates" : [
+					17.61134,
+					52.512629
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Warszawa",
+				"type" : "Point",
+				"coordinates" : [
+					20.904929,
+					52.239413
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Bydgoszcz",
+				"type" : "Point",
+				"coordinates" : [
+					18.071791,
+					53.117424
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Żydowo",
+				"type" : "Point",
+				"coordinates" : [
+					17.591486,
+					52.456782
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Stary Brześć",
+				"type" : "Point",
+				"coordinates" : [
+					18.901858,
+					52.615331
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Warszawa",
+				"type" : "Point",
+				"coordinates" : [
+					20.927569,
+					52.241351
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Miłomłyn",
+				"type" : "Point",
+				"coordinates" : [
+					19.857879,
+					53.765754
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Służewo",
+				"type" : "Point",
+				"coordinates" : [
+					18.65625,
+					52.858357
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Lelice",
+				"type" : "Point",
+				"coordinates" : [
+					19.761986,
+					52.743185
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Toruń",
+				"type" : "Point",
+				"coordinates" : [
+					18.603269,
+					53.024727
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Radomin",
+				"type" : "Point",
+				"coordinates" : [
+					19.197325,
+					53.086757
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Worowice Wyroby",
+				"type" : "Point",
+				"coordinates" : [
+					20.010643,
+					52.638107
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Strzelno",
+				"type" : "Point",
+				"coordinates" : [
+					18.181681,
+					52.641596
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Dolna Grupa",
+				"type" : "Point",
+				"coordinates" : [
+					18.686419,
+					53.508129
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Nowe",
+				"type" : "Point",
+				"coordinates" : [
+					18.724843,
+					53.65529
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Mąkowarsko",
+				"type" : "Point",
+				"coordinates" : [
+					17.815902,
+					53.403058
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Lisi Ogon",
+				"type" : "Point",
+				"coordinates" : [
+					17.880135,
+					53.124999
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Dąbrowa Biskupia",
+				"type" : "Point",
+				"coordinates" : [
+					18.530692,
+					52.77795
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Pruszcz Gdański",
+				"type" : "Point",
+				"coordinates" : [
+					18.610153,
+					54.24019
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Toruń",
+				"type" : "Point",
+				"coordinates" : [
+					18.665738,
+					53.037273
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Gnojewo",
+				"type" : "Point",
+				"coordinates" : [
+					18.914649,
+					54.053303
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Czernikowo",
+				"type" : "Point",
+				"coordinates" : [
+					18.957402,
+					52.941639
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Zamość",
+				"type" : "Point",
+				"coordinates" : [
+					17.826776,
+					53.072788
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Obórznia",
+				"type" : "Point",
+				"coordinates" : [
+					17.942223,
+					52.971383
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Strzelno",
+				"type" : "Point",
+				"coordinates" : [
+					18.150404,
+					52.628711
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Trzemeszno",
+				"type" : "Point",
+				"coordinates" : [
+					17.79413,
+					52.560972
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Kruszwica",
+				"type" : "Point",
+				"coordinates" : [
+					18.338925,
+					52.673922
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Chełmce",
+				"type" : "Point",
+				"coordinates" : [
+					18.473757,
+					52.615725
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Gniewkowo",
+				"type" : "Point",
+				"coordinates" : [
+					18.424291,
+					52.89938
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Bysław",
+				"type" : "Point",
+				"coordinates" : [
+					18.007914,
+					53.504869
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Plewno",
+				"type" : "Point",
+				"coordinates" : [
+					18.281364,
+					53.440803
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Chełmno",
+				"type" : "Point",
+				"coordinates" : [
+					18.461542,
+					53.341494
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Nowy Dwór Mazowiecki",
+				"type" : "Point",
+				"coordinates" : [
+					20.752635,
+					52.431557
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Młodzieszyn",
+				"type" : "Point",
+				"coordinates" : [
+					20.186678,
+					52.299061
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Cierpice",
+				"type" : "Point",
+				"coordinates" : [
+					18.466511,
+					52.994496
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Brzeźno",
+				"type" : "Point",
+				"coordinates" : [
+					18.77583,
+					53.091563
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Ciechanów",
+				"type" : "Point",
+				"coordinates" : [
+					20.60645,
+					52.869719
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Babiak",
+				"type" : "Point",
+				"coordinates" : [
+					18.669527,
+					52.352819
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Witkowo",
+				"type" : "Point",
+				"coordinates" : [
+					17.76563,
+					52.45149
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Iłowo-Wieś",
+				"type" : "Point",
+				"coordinates" : [
+					20.29694,
+					53.176688
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Unisławice",
+				"type" : "Point",
+				"coordinates" : [
+					19.15668,
+					52.472697
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Stolno",
+				"type" : "Point",
+				"coordinates" : [
+					18.506416,
+					53.315769
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Olsztynek",
+				"type" : "Point",
+				"coordinates" : [
+					20.280236,
+					53.57941
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Olsztynek",
+				"type" : "Point",
+				"coordinates" : [
+					20.299,
+					53.592428
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Łąkorz",
+				"type" : "Point",
+				"coordinates" : [
+					19.351773,
+					53.442953
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Nowa wieś",
+				"type" : "Point",
+				"coordinates" : [
+					19.0014,
+					52.58792
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Chodecz",
+				"type" : "Point",
+				"coordinates" : [
+					19.03609,
+					52.40559
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Choceń",
+				"type" : "Point",
+				"coordinates" : [
+					19.0132,
+					52.48773
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Zaduszniki",
+				"type" : "Point",
+				"coordinates" : [
+					19.19806,
+					52.71378
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Szczepanki",
+				"type" : "Point",
+				"coordinates" : [
+					19.03193,
+					53.51878
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Łasin",
+				"type" : "Point",
+				"coordinates" : [
+					19.069,
+					53.53725
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Straszyn",
+				"type" : "Point",
+				"coordinates" : [
+					18.59435,
+					54.27803
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Lichnowy",
+				"type" : "Point",
+				"coordinates" : [
+					18.90946,
+					54.11389
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Łubianka",
+				"type" : "Point",
+				"coordinates" : [
+					18.50163,
+					53.11872
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"city" : "Malbork",
+				"type" : "Point",
+				"coordinates" : [
+					19.04251,
+					54.02356
+				]
+			}
+		}
+	]
+}
