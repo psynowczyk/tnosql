@@ -1,8 +1,8 @@
 #Spis treści
-- [Dane techniczne](#Dane techniczne)
-- [Zadanie 1a](#Zadanie 1a)
-- [Zadanie 1b](#Zadanie 1b)
-- [Zadanie 1c](#Zadanie 1c)
+- [Dane techniczne](#dane-techniczne)
+- [Zadanie 1a](#zadanie-1a)
+- [Zadanie 1b](#zadanie-1b)
+- [Zadanie 1c](#zadanie-1c)
 
 #Dane techniczne
 **CPU**: Intel® Core™ i7-4510U (2.0 GHz, 3.1 GHz Turbo, 4 MB Cache)<br>
