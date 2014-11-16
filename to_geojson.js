@@ -22,7 +22,8 @@ var array = db.fuel.find({
 		}
 	}
 }).limit(5).toArray();
-*/
+
+// 1d.3
 var array = db.fuel.find({
 	loc: {
 		$geoWithin: {
@@ -38,23 +39,40 @@ var array = db.fuel.find({
 		}
 	}
 }).limit(100).toArray();
-
-var geojson = {
-	"type": "FeatureCollection",
-	"features": []
-};
-for(var x = 0; x < array.length; x++) {
-	var object = array[x];
-	geojson.features[x] = {
-		"type": "Feature",
-		"geometry": {
-			"city": object.city,
-			"type": object.loc.type,
-			"coordinates": [
-				object.loc.coordinates[0],
-				object.loc.coordinates[1]
-			]
-		}
-	};
+*/
+// 1d.4
+var line = {
+	"type": "LineString",
+	"coordinates": [[20.904929, 52.239413], [19.424150, 54.374859]]
 }
-printjson(geojson);
+var array = db.fuel.find({
+	loc: {
+		$geoIntersects: {
+			$geometry: line
+		}
+	}
+}).limit(100).toArray();
+
+if(array.length > 0) {
+
+	var geojson = {
+		"type": "FeatureCollection",
+		"features": []
+	};
+	for(var x = 0; x < array.length; x++) {
+		var object = array[x];
+		geojson.features[x] = {
+			"type": "Feature",
+			"geometry": {
+				"city": object.city,
+				"type": object.loc.type,
+				"coordinates": [
+					object.loc.coordinates[0],
+					object.loc.coordinates[1]
+				]
+			}
+		};
+	}
+	printjson(geojson);
+}
+else print("no records");
