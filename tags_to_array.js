@@ -14,7 +14,7 @@ trains.forEach(function (result) {
 					tags: TagsArray
 				}
 			}
-		)
+		);
 	}
 });
 print("Documents modified: " + counter);
