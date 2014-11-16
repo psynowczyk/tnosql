@@ -2,6 +2,7 @@
 - [Dane techniczne](#Dane techniczne)
 - [Zadanie 1a](#Zadanie 1a)
 - [Zadanie 1b](#Zadanie 1b)
+- [Zadanie 1c](#Zadanie 1c)
 
 #Dane techniczne
 **CPU**: Intel® Core™ i7-4510U (2.0 GHz, 3.1 GHz Turbo, 4 MB Cache)<br>
@@ -73,3 +74,21 @@ Przykładowy zmodyfikowany dokument:
 ```
 
 ![alt text](https://raw.githubusercontent.com/psynowczyk/tnosql/master/sc2.png "")
+
+Zliczanie wszystkich tagów za pomocą [skryptu](https://github.com/psynowczyk/tnosql/blob/master/all_tags.js):
+
+```
+$ time mongo all_tags.js
+All tags: 17408733
+
+real    3m 44.720s
+user    0m 40.694s
+sys     0m 2.623s
+```
+
+Zliczanie unikalnych tagów:
+
+```
+> db.trains.distinct("tags").length
+42060
+```
