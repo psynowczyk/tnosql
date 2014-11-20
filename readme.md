@@ -34,6 +34,11 @@ sys     0m 6.343s
 ```
 Średnio 30134 rekordów na sekundę
 
+Postgres, po utworzeniu tabeli:
+```
+COPY trains FROM 'Train_ready.csv' DELIMITER ',' CSV;
+```
+
 ![alt text](https://raw.githubusercontent.com/psynowczyk/tnosql/master/sc1.png "")
 
 #Zadanie 1b
