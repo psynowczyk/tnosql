@@ -3,6 +3,9 @@
 	"features" : [
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Gdańsk",
 				"type" : "Point",
@@ -14,6 +17,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Gdańsk",
 				"type" : "Point",
@@ -25,6 +31,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Gdańsk",
 				"type" : "Point",
@@ -36,6 +45,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Gdańsk",
 				"type" : "Point",
@@ -47,6 +59,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Gdańsk",
 				"type" : "Point",
@@ -58,6 +73,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Gdańsk",
 				"type" : "Point",
@@ -69,6 +87,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Gdańsk",
 				"type" : "Point",
@@ -80,6 +101,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Gdańsk",
 				"type" : "Point",
@@ -91,6 +115,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Kowale",
 				"type" : "Point",
@@ -102,12 +129,127 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Straszyn",
 				"type" : "Point",
 				"coordinates" : [
 					18.59435,
 					54.27803
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Pruszcz Gdański",
+				"type" : "Point",
+				"coordinates" : [
+					18.610153,
+					54.24019
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Gdańsk",
+				"type" : "Point",
+				"coordinates" : [
+					18.435228,
+					54.382705
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Gdynia",
+				"type" : "Point",
+				"coordinates" : [
+					18.535432,
+					54.492022
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Gdynia",
+				"type" : "Point",
+				"coordinates" : [
+					18.480598,
+					54.472753
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Gdynia",
+				"type" : "Point",
+				"coordinates" : [
+					18.47884,
+					54.47279
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Żukowo",
+				"type" : "Point",
+				"coordinates" : [
+					18.375503,
+					54.353355
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Gdynia",
+				"type" : "Point",
+				"coordinates" : [
+					18.53477,
+					54.49703
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Gdynia",
+				"type" : "Point",
+				"coordinates" : [
+					18.51422,
+					54.49651
 				]
 			}
 		}
