@@ -3,6 +3,9 @@
 	"features" : [
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Krynica Morska",
 				"type" : "Point",
@@ -14,6 +17,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Warszawa",
 				"type" : "Point",
