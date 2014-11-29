@@ -2,10 +2,25 @@
 	"type" : "FeatureCollection",
 	"features" : [
 		{
+	      "type": "Feature",
+	      "properties": {},
+	      "geometry": {
+	        "type": "LineString",
+	        "coordinates": [
+	          [
+	            20.904929,
+	            52.239413
+	          ],
+	          [
+	            19.424150,
+	            54.374859
+	          ]
+	        ]
+	      }
+	   },
+		{
 			"type" : "Feature",
-			"properties" : {
-				
-			},
+			"properties" : {},
 			"geometry" : {
 				"city" : "Krynica Morska",
 				"type" : "Point",
@@ -17,9 +32,7 @@
 		},
 		{
 			"type" : "Feature",
-			"properties" : {
-				
-			},
+			"properties" : {},
 			"geometry" : {
 				"city" : "Warszawa",
 				"type" : "Point",
