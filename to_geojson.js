@@ -11,7 +11,7 @@ var array = db.fuel.find({
 		},
 		$maxDistance: 20000
 	}
-}).limit(10).toArray();
+}).limit(50).toArray();
 
 // 1d.2
 var olsztyn = { "type": "Point", "coordinates": [20.48, 53.78] }
@@ -21,8 +21,9 @@ var array = db.fuel.find({
 			$center: [[olsztyn.coordinates[0], olsztyn.coordinates[1]], 0.80]
 		}
 	}
-}).limit(5).toArray();
-
+}).limit(50).toArray();
+*/
+/*
 // 1d.3
 var array = db.fuel.find({
 	loc: {
@@ -53,6 +54,7 @@ var array = db.fuel.find({
 	}
 }).limit(100).toArray();
 
+
 if(array.length > 0) {
 
 	var geojson = {
@@ -63,6 +65,7 @@ if(array.length > 0) {
 		var object = array[x];
 		geojson.features[x] = {
 			"type": "Feature",
+			"properties": {},
 			"geometry": {
 				"city": object.city,
 				"type": object.loc.type,
