@@ -205,7 +205,7 @@ db.fuel.find({
 
 ### 1d.4
 
-Stacje paliw na linii Warszawa-Gdańsk (z powodu braku wyniku podałem dokładne współrzędne punktu A i B, które są stacjami paliw)
+Stacje paliw na linii Warszawa-Gdańsk
 ```js
 var line = {
 	"type": "LineString",
