@@ -3,6 +3,233 @@
 	"features" : [
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Iłowo-Wieś",
+				"type" : "Point",
+				"coordinates" : [
+					20.29694,
+					53.176688
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Olsztynek",
+				"type" : "Point",
+				"coordinates" : [
+					20.280236,
+					53.57941
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Olsztynek",
+				"type" : "Point",
+				"coordinates" : [
+					20.299,
+					53.592428
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Bartoszyce",
+				"type" : "Point",
+				"coordinates" : [
+					20.79789,
+					54.26566
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Sępopol",
+				"type" : "Point",
+				"coordinates" : [
+					21.00766,
+					54.26322
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Sępopol",
+				"type" : "Point",
+				"coordinates" : [
+					21.0155,
+					54.26828
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Pieniężno",
+				"type" : "Point",
+				"coordinates" : [
+					20.12305,
+					54.23518
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Górowo Iławeckie",
+				"type" : "Point",
+				"coordinates" : [
+					20.48241,
+					54.28949
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Uniszki Zawadzkie",
+				"type" : "Point",
+				"coordinates" : [
+					20.421098,
+					53.171829
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Nidzica",
+				"type" : "Point",
+				"coordinates" : [
+					20.39053,
+					53.372747
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Miłomłyn",
+				"type" : "Point",
+				"coordinates" : [
+					19.857879,
+					53.765754
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Miłakowo",
+				"type" : "Point",
+				"coordinates" : [
+					20.060554,
+					54.012605
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Miłakowo",
+				"type" : "Point",
+				"coordinates" : [
+					20.064678,
+					54.002443
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Pieniężno",
+				"type" : "Point",
+				"coordinates" : [
+					20.134586,
+					54.237628
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Połęcze",
+				"type" : "Point",
+				"coordinates" : [
+					20.811505,
+					54.235071
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
+			"geometry" : {
+				"city" : "Chorzele",
+				"type" : "Point",
+				"coordinates" : [
+					20.89821,
+					53.248074
+				]
+			}
+		},
+		{
+			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Szczytno",
 				"type" : "Point",
@@ -14,6 +241,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Szczytno",
 				"type" : "Point",
@@ -25,6 +255,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Olsztyn",
 				"type" : "Point",
@@ -36,6 +269,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Stawiguda",
 				"type" : "Point",
@@ -47,6 +283,9 @@
 		},
 		{
 			"type" : "Feature",
+			"properties" : {
+				
+			},
 			"geometry" : {
 				"city" : "Miłomłyn",
 				"type" : "Point",
