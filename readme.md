@@ -158,140 +158,28 @@ Dodajemy geo-indeks do kolekcji:
 ### 1d.1
 
 10 najbliższych stacji paliw w promieniu 20km od centrum Gdańska
-```
-> var gdansk = { "type": "Point", "coordinates": [18.65, 54.35] }
-> db.fuel.find({ loc: { $near: { $geometry: gdansk }, $maxDistance: 20000 } }).limit(10).toArray()
-[
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974acf3"),
-		"city" : "Gdańsk",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.59567,
-				54.3509
-			]
-		}
-	},
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974ad4c"),
-		"city" : "Gdańsk",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.71147,
-				54.3506
-			]
-		}
-	},
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974ae4f"),
-		"city" : "Gdańsk",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.65841,
-				54.391505
-			]
-		}
-	},
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974b05e"),
-		"city" : "Gdańsk",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.571749,
-				54.337487
-			]
-		}
-	},
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974ad8f"),
-		"city" : "Gdańsk",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.619926,
-				54.394374
-			]
-		}
-	},
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974ad95"),
-		"city" : "Gdańsk",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.621572,
-				54.397784
-			]
-		}
-	},
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974ad1c"),
-		"city" : "Gdańsk",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.59482,
-				54.40933
-			]
-		}
-	},
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974acf4"),
-		"city" : "Gdańsk",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.52591,
-				54.35009
-			]
-		}
-	},
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974ace9"),
-		"city" : "Kowale",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.546702,
-				54.304205
-			]
-		}
-	},
-	{
-		"_id" : ObjectId("5468cadcc5e4ff939974ad10"),
-		"city" : "Straszyn",
-		"loc" : {
-			"type" : "Point",
-			"coordinates" : [
-				18.59435,
-				54.27803
-			]
-		}
-	}
-]
+```js
+var gdansk = { "type": "Point", "coordinates": [18.65, 54.35] };
+db.fuel.find({ loc: { $near: { $geometry: gdansk }, $maxDistance: 20000 } }).limit(50).toArray();
 ```
 
 Przekształcenie do formatu geojson za pomocą [skryptu](https://github.com/psynowczyk/tnosql/blob/master/to_geojson.js)<br>
-Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d1_result.geojson
+[Mapa](https://github.com/psynowczyk/tnosql/blob/master/1d1_result.geojson)
 
 ### 1d.2
 
 Stacje paliw w promieniu 0.8° od Olsztyna
-```
-var olsztyn = { "type": "Point", "coordinates": [20.48, 53.78] }
+```js
+var olsztyn = { "type": "Point", "coordinates": [20.48, 53.78] };
 db.fuel.find({
 	loc: {
 		$geoWithin: {
 			$center: [[olsztyn.coordinates[0], olsztyn.coordinates[1]], 0.80]
 		}
 	}
-}).limit(5).toArray();
+}).limit(50).toArray();
 ```
-Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d2_result.geojson
+[Mapa](https://github.com/psynowczyk/tnosql/blob/master/1d2_result.geojson)
 
 ### 1d.3
 
@@ -313,7 +201,7 @@ db.fuel.find({
 	}
 }).limit(100).toArray();
 ```
-Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d3_result.geojson
+[Mapa](https://github.com/psynowczyk/tnosql/blob/master/1d3_result.geojson)
 
 ### 1d.4
 
@@ -331,4 +219,4 @@ db.fuel.find({
 	}
 }).limit(100).toArray();
 ```
-Mapa: https://github.com/psynowczyk/tnosql/blob/master/1d4_result.geojson
+[Mapa](https://github.com/psynowczyk/tnosql/blob/master/1d4_result.geojson)
