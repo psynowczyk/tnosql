@@ -2,6 +2,33 @@
 	"type" : "FeatureCollection",
 	"features" : [
 		{
+	      "type": "Feature",
+	      "properties": {},
+	      "geometry": {
+	        "type": "Polygon",
+	        "coordinates": [
+	          [
+	            [
+	              18.65,
+	              54.35
+	            ],
+	            [
+	              20.48,
+	              53.78
+	            ],
+	            [
+	              16.93,
+	              52.41
+	            ],
+	            [
+	              18.65,
+	              54.35
+	            ]
+	          ]
+	        ]
+	      }
+   	},
+		{
 			"type" : "Feature",
 			"properties" : {
 				
