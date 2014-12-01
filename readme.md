@@ -72,6 +72,7 @@ SELECT pg_size_pretty( pg_relation_size('trains') );
 
 Porównanie:
 | Baza danych    | Czas importu | Szybkość  | Rozmiar danych |
+|----------------|--------------|-----------|----------------|
 | PostgreSQL 9.3 | 6m 11.163s   | 16455 r/s | 5222 MB        |
 | Mongo 2.4.9    | 3m 20.245s   | 30134 r/s | 7365 MB        |
 | Mongo 2.8.0 rc | 4m 12.240s   | 23922 r/s | 10183 MB       |
