@@ -69,8 +69,6 @@ Rozmiar tabeli:
 SELECT pg_size_pretty( pg_relation_size('trains') );
 5222 MB
 ```
-
-Porównanie:<br>
 | Baza danych                                | Czas importu | Szybkość  | Rozmiar danych |
 |--------------------------------------------|--------------|-----------|----------------|
 | PostgreSQL 9.3                             | 6m 11.163s   | 16455 r/s | 5222 MB        |
