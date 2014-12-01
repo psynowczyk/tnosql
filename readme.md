@@ -34,10 +34,50 @@ sys     0m 6.343s
 ```
 Średnio 30134 rekordów na sekundę
 
-Postgres, po utworzeniu tabeli:
-```sh
-COPY trains FROM 'Train_ready.csv' DELIMITER ',' CSV;
+Rozmiar kolekcji:
+```js
+db.trains.stats(1024 * 1024)
+...
+size: 7365
+...
 ```
+
+Postgres: usunięcie headerline, stworzenie tabeli, import z pliku
+```sh
+sed '1d' Train_ready.csv > Train_ready_psql.csv
+
+psql
+\timing
+Timing is on.
+
+CREATE TABLE trains(
+	ID INT PRIMARY KEY NOT NULL,
+	TITLE TEXT NOT NULL,
+	BODY TEXT NOT NULL,
+	TAGS TEXT NOT NULL
+);
+CREATE TABLE
+
+COPY trains FROM '/home/username/Train_ready_psql.csv' DELIMITER ',' CSV;
+COPY 6034195
+Time: 366697,883 ms ~ 6,1 minut
+```
+Średnio 16455 rekordów na sekundę
+
+Rozmiar tabeli:
+```sh
+SELECT pg_size_pretty( pg_relation_size('trains') );
+5222 MB
+```
+
+Porównanie:
+| Baza danych    | Czas importu | Szybkość  | Rozmiar danych |
+| PostgreSQL 9.3 | 6m 11.163s   | 16455 r/s | 5222 MB        |
+| Mongo 2.4.9    | 3m 20.245s   | 30134 r/s | 7365 MB        |
+| Mongo 2.8.0 rc | 4m 12.240s   | 23922 r/s | 10183 MB       |
+| Mongo 2.8.0 rc WiredTiger bez kompresji    | 4m 6.960s  | 24434 r/s | 7037 MB |
+| Mongo 2.8.0 rc WiredTiger kompresja snappy | 3m 55.608s | 25611 r/s | 2889 MB |
+| Mongo 2.8.0 rc WiredTiger kompresja zlib   | 3m 55.924s | 25577 r/s | 2185 MB |
 
 ![alt text](https://raw.githubusercontent.com/psynowczyk/tnosql/master/sc1.png "")
 
@@ -45,6 +85,10 @@ COPY trains FROM 'Train_ready.csv' DELIMITER ',' CSV;
 
 ```js
 db.trains.count();
+6034195
+```
+```sh
+SELECT COUNT (*) FROM trains;
 6034195
 ```
 
