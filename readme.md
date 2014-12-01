@@ -38,7 +38,7 @@ Rozmiar kolekcji:
 ```js
 db.trains.stats(1024 * 1024)
 ...
-size: 7365
+storageSize: 7681
 ...
 ```
 
